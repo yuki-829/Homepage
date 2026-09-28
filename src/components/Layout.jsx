@@ -1,22 +1,15 @@
+// components/Layout.jsx
+import Header from "./Header";
+import Footer from "./Footer";
 import "../styles/base.css";
 import "../styles/typography.css";
 
 export default function Layout({ children }) {
   return (
     <div className="container">
-      <header>
-        <nav>
-          <a href="/">Home</a>
-          <a href="/about">About</a>
-          <a href="/blog">Blog</a>
-        </nav>
-      </header>
-
+      <Header />
       <main>{children}</main>
-
-      <footer>
-        <p>© 2026 Yuki</p>
-      </footer>
+      <Footer />
     </div>
   );
 }

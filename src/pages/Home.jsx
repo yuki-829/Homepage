@@ -1,4 +1,5 @@
 import Layout from "../components/Layout";
+import { Link } from "react-router-dom";
 
 export default function Home() {
   return (
@@ -6,8 +7,9 @@ export default function Home() {
       <section>
         <h1>Yuki</h1>
         <p>
-          Technical college student in Maizuru, learning backend development with Go,
-          exploring React, and experimenting with electronics and device physics.
+          Technical college student in Maizuru,major is electrical and information engineering.
+          learning backend development with Go,
+          exploring React, and experimenting with electronics.
         </p>
       </section>
 
@@ -24,7 +26,7 @@ export default function Home() {
         <h2>Blog</h2>
         <p>
           I write about Go, React, electronics, and learning notes.
-          <a href="/blog">Read the blog →</a>
+          <Link to="/blog">Read the blog →</Link>
         </p>
       </section>
     </Layout>
